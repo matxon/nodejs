@@ -1,0 +1,14 @@
+﻿extends layout
+
+block title
+    title= doctitle
+
+block content
+    .container-fluid
+        h1= doctitle
+        p Welcome to #{doctitle}
+        hr
+        - if (!isAuthenticated) {
+            include ./includes/login.jade
+        - }
+        include ./includes/newproject.jade

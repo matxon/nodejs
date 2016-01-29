@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap datepicker -ді қосу үшін -->
+	<link href="css/bootstrap-datepicker3.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<div class="container-fluid">
+    <h1>Жаңа тендерлік құжаттар дайындау</h1>
+	
+	<hr>
+	
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label class="col-sm-2 col-lg-2 control-label">Сатып-алудың атауы</label>
+			<div class="col-sm-10 col-lg-10">
+				<input type="text"  class="form-control">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Ұйымдастырушы</label>
+			<div class="col-sm-10">
+				<input type="text"  class="form-control">
+			</div>
+		</div>
+		<div class="form-group">	
+			<label class="col-sm-2 control-label">Лоттардың саны</label>
+			<div class="col-sm-1">
+				<input type="text"  class="form-control">
+			</div>
+			<label class="col-sm-1 control-label">Соммасы</label>
+			<div class="col-sm-3">
+				<div class="form-inline input-group">
+					<div class="input-group-addon">$</div>
+					<input type="text"  class="form-control">
+				</div>
+			</div>
+			<label class="col-sm-2 control-label">Өткізу тәсілі</label>
+			<div class="col-sm-3">
+				<select class="form-control">
+					<option>Ашық байқау</option>
+					<option>Баға ұсынысы</option>
+					<option>Бір көзден</option>
+					<option>СЭЗ</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Мәртебесі</label>
+			<div class="col-sm-3">
+				<select class="form-control" disabled>
+					<option>Опубликован</option>
+					<option>Вскрытие</option>
+					<option>Допуск</option>
+					<option>Итоги</option>
+					<option>Завершен</option>
+					<option>Отменен</option>
+				</select>
+			</div>
+			<label class="col-sm-2 control-label">Қабылдау мерзімі</label>
+			<div class="col-sm-2">
+				<input type="text"  class="datepicker form-control">
+			</div>
+		</div>
+		<div class="form-group">
+			<p class="col-sm-offset-11 col-sm-1">
+				<button type="submit" class="btn btn-default">Келесі</button>
+			</p>
+		</div>
+	</form>
+	
+	<hr>
+	
+	<h1>Шаблонды толтыру</h1>
+	
+	<hr>
+	
+	<form class="form-horizontal">
+				
+		<div class="form-group">
+			<label class="col-sm-1 col-lg-1 control-label">
+				<div class="checkbox">
+					<input type="checkbox">1 Лот
+				</div>
+			</label>
+			<div>
+				<div class="col-sm-8 col-lg-9">
+					<input type="text"  class="form-control">
+				</div>
+				<div class="col-sm-3 col-lg-2">
+					<div class="form-inline input-group">
+					<div class="input-group-addon">$</div>
+					<input type="text"  class="form-control">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<label class="col-sm-1 col-lg-1 control-label">
+				<div class="checkbox">
+					<input type="checkbox">2 Лот
+				</div>
+			</label>
+			<div>
+				<div class="col-sm-8 col-lg-9">
+					<input type="text"  class="form-control">
+				</div>
+				<div class="col-sm-3 col-lg-2">
+					<div class="form-inline input-group">
+					<div class="input-group-addon">$</div>
+					<input type="text"  class="form-control">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<label class="col-sm-1 col-lg-1 control-label">
+				<div class="checkbox">
+					<input type="checkbox">3 Лот
+				</div>
+			</label>
+			<div>
+				<div class="col-sm-8 col-lg-9">
+					<input type="text"  class="form-control">
+				</div>
+				<div class="col-sm-3 col-lg-2">
+					<div class="form-inline input-group">
+					<div class="input-group-addon">$</div>
+					<input type="text"  class="form-control">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<p class="col-sm-offset-11 col-sm-1">
+				<button type="submit" class="btn btn-default">Келесі</button>
+			</p>
+		</div>
+			<div class="alert alert-info" role="alert">Қатысатын Лоттарыңызды белгілеңіз</div>
+	</form>	
+	
+	<hr>
+	
+	<h1>Құжаттарды жинақтау</h1>
+	
+	<hr>
+	
+	<table class="table table-hover">
+		<thead>
+		<tr>
+			<th>#</th><th>Құжат</th><th>Мерзімі</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr class="info">
+			<td colspan=3>Общие документы</td>
+		</tr>
+		
+		<tr>
+			<td>1</td><td>Сканированная копия устава</td><td><button id="new" class="btn btn-default" type="submit">Click</button></td>
+		</tr>
+		<tr>
+			<td>2</td><td>Сканированная копия свидетельства  о государственной регистрации (перерегистрации) юридического лица с указанием БИН</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>3</td><td> Сканированная копия гарантийного письма, подтверждающего, что устав содержит сведения об учредителях или составе учредителей</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>4</td><td>(ЦОН) Справка о государственной регистрации (перерегистрации) юридического лица с указанием БИН</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>5</td><td>Сканированная копия справки банка или филиала банка с подписью и печатью</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>6</td><td>Сканированная копия бухгалтерского баланса за последний финансовый год, подписанного потенциальным поставщиком и скрепленного печатью юридического лица.</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>7</td><td>Сканированная копия справки установленной формы соответствующего налогового органа об отсутствии налоговой задолженности и задолженности по обязательным пенсионным взносам и социальным отчислениям</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>8</td><td>Сканированная копия документа о постановке на учет плательщика по НДС</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>9</td><td>Гарантийные письма потенциального поставщика об отсутствии оснований, запрещающих участвовать в проводимом открытом конкурсе, указанных в подпункте 3) пункта 8, подпунктах 1), 2) и 4) пункта 11 настоящих Правил</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>10</td><td>Гарантийное письмо о соблюдении требования о сдаче отчетности по местному содержанию</td><td><input type="checkbox"></td>
+		</tr>
+		<tr class="info">
+			<td colspan=3>Документы подготавливаемые для каждого лота отдельно</td>
+		</tr>
+		<tr>
+			<td>11</td><td>сведения о количестве работников по форме, согласно приложению 2 к настоящим Правилам, подписанные электронной цифровой подписью первого руководителя</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>12</td><td>Сканированные копии документов (лицензия, патент, свидетельство)</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>13</td><td>Гарантийное письмо, что вид деятельности закупаемых услуг не подлежит обязательной сертификации</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>14</td><td>Обязательства по местному содержанию в предлагаемых товарах или работах, или услугах, выраженные в процентах по каждому лоту (от 0 до 100)</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>15</td><td>Обязательства подрядчика о соблюдении настоящих Правил при исполнении договора на выполнение отдельных видов работ, связанных с проведением операций по недропользованию</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>15</td><td>Сканированная копия гарантийного письма, подтверждающего, что потенциальный поставщик не намеревается привлекать подрядчиков </td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>16</td><td>Гарантийные письма потенциального поставщика об отсутствии оснований, запрещающих участвовать в проводимом открытом конкурсе, указанных в подпунктах 3) и 5) пункта 11 и пункте 12 настоящих Правил</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>17</td><td>Сканированные копии документов, подтверждающих наличие у потенциального поставщика сертифицированной аккредитованной  системы (сертифицированных систем) менеджмента качества в соответствии с требованиями государственных стандартов</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>18</td><td>Сканированные копии рекомендательных писем</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>19</td><td>Сканированные копий накладных, соответствующих актов, подтверждающих прием-передачу выполненных работ, оказанных услуг</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>20</td><td>Сканированная копия документа, подтверждающего внесение обеспечения конкурсной заявки</td><td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>21</td><td>Гарантийное письмо, подтверждающее согласие потенциального поставщика с существенными условиями проекта договора</td><td><input type="checkbox"></td>
+		</tr>
+		
+		</tbody>
+	</table>
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<!-- Bootstrap datepicker -ді қосу үшін -->
+	<script src="js/bootstrap-datepicker.js"></script>
+	
+	<script src="js/tender.js"></script>
+  </body>
+</html>

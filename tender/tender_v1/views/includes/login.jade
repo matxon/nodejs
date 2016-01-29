@@ -1,0 +1,23 @@
+div
+    .modal(style="display: block")
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    button(type="button", data-dismiss="modal", aria-label="Close").close
+                        span(aria-hidden="true") &times
+                    h4.modal-title Жүйеге кіру
+                .modal-body
+                    form.form-horizontal
+                        .form-group
+                            label.col-sm-2.control-label Username
+                            .col-sm-10
+                                input.form-control(type="text", name="username", placeholder="Username")
+                        .form-group
+                            label.col-sm-2.control-label Username
+                            .col-sm-10
+                                input.form-control(type="password", name="password", placeholder="Password")
+                .modal-footer
+                    button(type="button", data-dismiss="modal").btn.btn-default Sign
+
+//script
+//    $('.modal').modal('show');
