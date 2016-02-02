@@ -1,0 +1,38 @@
+$color_commnet: #0099ff;
+$color_linenr: #996633;
+$color_type: #009900;
+$color_statement: #ffcc00;
+$color_constant: #9900cc;
+$color_preproc: #3399cc;
+
+body {
+//  font-family: Arial;
+//  font-size: 1em;
+//  font-style: normal;
+}
+
+.Comment {
+  color: $color_commnet;
+}
+
+.LineNr {
+  color: $color_linenr;
+  font-style: bold;
+}
+
+.Type {
+  color: $color_type;
+  font-style: bold;
+}
+
+.Statement {
+  color: $color_statement;
+}
+
+.Constant {
+  color: $color_constant;
+}
+
+.PreProc {
+  color: $color_preproc;
+}

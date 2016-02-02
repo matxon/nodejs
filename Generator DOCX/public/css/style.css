@@ -1,0 +1,21 @@
+.Comment {
+  color: #0099ff; }
+
+.LineNr {
+  color: #996633;
+  font-style: bold; }
+
+.Type {
+  color: #009900;
+  font-style: bold; }
+
+.Statement {
+  color: #ffcc00; }
+
+.Constant {
+  color: #9900cc; }
+
+.PreProc {
+  color: #3399cc; }
+
+/*# sourceMappingURL=style.css.map */
