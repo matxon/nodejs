@@ -1,0 +1,12 @@
+- var data = [{ name: "Document 1", date: "01/01/2018"},{ name: "Document 2", date: "01/01/2018"},{ name: "Document 3", date: "01/01/2018"}];
+table
+  tr
+    th No
+    th Наименование документа
+    th Срок
+  each val,index in data
+    tr
+      td= index
+      td= val.name
+      td= val.date
+

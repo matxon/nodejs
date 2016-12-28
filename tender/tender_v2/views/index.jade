@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+
+  table.table
+    tr
+      th ID
+      th Наименование документа
+      th Срок
+      th Выбор
+    each val,index in table
+      tr
+        td= index + 1
+        td= val.name
+        td= val.date
+        td 
+          input(type='checkbox' checked='checked')
